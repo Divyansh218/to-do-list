@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Projects TO DO List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Website Projects TO DO List</h1>
+
+        <div id="task-form">
+            <input type="text" id="task-name" placeholder="Task name">
+            <input type="date" id="task-deadline">
+            <select id="task-priority">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <select id="task-category">
+                <option value="Planning and Research">Planning and Research</option>
+                <option value="Design">Design</option>
+                <option value="Development">Development</option>
+            </select>
+            <button id="add-task">Add Task</button>
+        </div>
+
+        <div id="progress-container">
+            <label for="progress-bar">Progress: </label>
+            <progress id="progress-bar" value="0" max="100"></progress>
+            <span id="progress-percent">0%</span>
+        </div>
+
+        <div id="task-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
